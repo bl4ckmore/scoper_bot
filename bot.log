@@ -1,0 +1,285 @@
+2026-05-25 13:54:52,261 [WARNING] HLTV scrape failed: 403 Client Error: Forbidden for url: https://www.hltv.org/news
+2026-05-25 13:54:58,991 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:58,992 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,079 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,080 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,165 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,166 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,269 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,270 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,355 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,356 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,439 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,440 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,541 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,542 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,626 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,627 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,726 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,727 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,812 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,813 [ERROR] Telegram error: Chat not found
+2026-05-25 13:54:59,923 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:54:59,924 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,008 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,008 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,112 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,113 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,198 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,199 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,283 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,284 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,369 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,370 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,453 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,454 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,539 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,540 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,624 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,625 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:00,710 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:00,711 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:10,118 [WARNING] HLTV scrape failed: 403 Client Error: Forbidden for url: https://www.hltv.org/
+2026-05-25 13:55:13,154 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,155 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:13,241 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,242 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:13,325 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,326 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:13,432 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,433 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:13,543 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,544 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:13,648 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,649 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:13,785 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,786 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:13,901 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:13,902 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:14,005 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:14,006 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:14,118 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:14,119 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:14,241 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:14,242 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:14,682 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:14,683 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:14,874 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:14,875 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:15,015 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:15,016 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:15,167 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:15,169 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:15,280 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:15,281 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:15,367 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:15,368 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:15,458 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:15,459 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:15,542 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:15,543 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:15,622 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 400 Bad Request"
+2026-05-25 13:55:15,623 [ERROR] Telegram error: Chat not found
+2026-05-25 13:55:42,755 [WARNING] HLTV scrape failed: 403 Client Error: Forbidden for url: https://www.hltv.org/
+2026-05-25 13:55:44,923 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:55:48,094 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:55:51,250 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:56:09,728 [WARNING] HLTV scrape failed: 403 Client Error: Forbidden for url: https://www.hltv.org/news
+2026-05-25 13:56:12,639 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:56:15,805 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:56:18,944 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:56:52,282 [WARNING] HLTV scrape failed: 403 Client Error: Forbidden for url: https://www.hltv.org/news
+2026-05-25 13:56:54,841 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:56:58,021 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:57:01,194 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:58:44,266 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:58:47,406 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:58:50,536 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:59:24,236 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:59:27,438 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 13:59:30,599 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:01:19,334 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:01:22,480 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:01:25,623 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:02:05,607 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:02:08,774 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:02:11,925 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:07:47,102 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getMe "HTTP/1.1 200 OK"
+2026-05-25 14:07:47,103 [INFO] Checking for new CS2 news...
+2026-05-25 14:07:49,994 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:07:52,098 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:07:54,205 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:07:56,319 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:07:58,431 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:00,537 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:02,653 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:04,806 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:06,908 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:09,018 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:11,135 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:13,370 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:15,472 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:17,572 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:19,698 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:21,808 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:23,942 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:26,065 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:28,179 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:30,300 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:32,416 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:34,524 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:36,638 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:38,761 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:40,766 [INFO] Sent 24 new articles for approval.
+2026-05-25 14:08:40,837 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/deleteWebhook "HTTP/1.1 200 OK"
+2026-05-25 14:08:40,840 [INFO] Application started
+2026-05-25 14:08:42,700 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:08:42,786 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-05-25 14:08:42,903 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:08:43,011 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/editMessageText "HTTP/1.1 200 OK"
+2026-05-25 14:08:43,012 [INFO] Posted: 🇪🇺
+Falcons берут первую карту!  Вторая карта —
+🐸
+Ancient, вы...
+2026-05-25 14:08:52,773 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:09:02,842 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:09:05,239 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:09:05,505 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-05-25 14:09:05,646 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:09:05,757 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/editMessageText "HTTP/1.1 200 OK"
+2026-05-25 14:09:05,758 [INFO] Posted: 🇧🇷
+LEGACY ВЫХОДЯТ ВПЕРЁД — 2:1!
+Четвёртая карта —
+🟡
+Dust2,
+в...
+2026-05-25 14:09:15,310 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:09:25,382 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:09:32,051 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:09:32,283 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-05-25 14:09:32,401 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:09:32,494 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/editMessageText "HTTP/1.1 200 OK"
+2026-05-25 14:09:32,495 [INFO] Posted: Counter-Strike 2 Update...
+2026-05-25 14:09:42,121 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:09:52,191 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:10:02,261 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:10:12,330 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:10:22,400 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:10:32,470 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:10:42,540 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:10:52,610 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:11:02,680 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:11:12,750 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:11:22,821 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:11:32,891 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:11:42,962 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:11:53,033 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:12:03,103 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:12:13,452 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:12:23,523 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:12:33,593 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:12:43,663 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:12:53,733 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:13:03,804 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:13:13,873 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:13:23,942 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:13:34,013 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:13:44,082 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:13:54,153 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:14:04,222 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:14:14,292 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:14:24,361 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:14:34,434 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:14:44,503 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:14:53,494 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:14:53,753 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-05-25 14:14:53,866 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:14:53,956 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/editMessageText "HTTP/1.1 200 OK"
+2026-05-25 14:14:53,957 [INFO] Posted: Counter-Strike 2 Update...
+2026-05-25 14:15:03,566 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:15:13,635 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:15:23,705 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:15:33,776 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:15:43,846 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:15:53,915 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:16:03,985 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:16:14,056 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:16:24,125 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:16:34,195 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:16:44,266 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:16:54,335 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:04,404 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:14,474 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:20,760 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:20,761 [INFO] Application is stopping. This might take a moment.
+2026-05-25 14:17:20,761 [INFO] Application.stop() complete
+2026-05-25 14:17:20,776 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<main.<locals>.startup.<locals>.periodic() running at C:\Users\gkupreishvili\Desktop\scoper_bot\bot.py:321> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-05-25 14:17:23,354 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getMe "HTTP/1.1 200 OK"
+2026-05-25 14:17:23,356 [INFO] Checking for new CS2 news...
+2026-05-25 14:17:26,737 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:17:28,741 [INFO] Sent 1 new articles for approval.
+2026-05-25 14:17:28,810 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/deleteWebhook "HTTP/1.1 200 OK"
+2026-05-25 14:17:28,812 [INFO] Application started
+2026-05-25 14:17:39,037 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:42,235 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:42,472 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-05-25 14:17:42,571 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/editMessageText "HTTP/1.1 200 OK"
+2026-05-25 14:17:50,176 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:50,430 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:17:51,983 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:17:52,069 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-05-25 14:17:52,199 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:17:52,308 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/editMessageText "HTTP/1.1 200 OK"
+2026-05-25 14:17:52,309 [INFO] Posted: DUMAU, ОДНИМ СПРЕЕМ, КРАСИВО!111...
+2026-05-25 14:18:02,062 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:18:12,137 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:18:22,215 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:18:29,644 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:18:29,645 [INFO] Application is stopping. This might take a moment.
+2026-05-25 14:18:29,645 [INFO] Application.stop() complete
+2026-05-25 14:18:29,656 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<main.<locals>.startup.<locals>.periodic() done, defined at C:\Users\gkupreishvili\Desktop\scoper_bot\bot.py:353> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-05-25 14:18:42,807 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getMe "HTTP/1.1 200 OK"
+2026-05-25 14:18:42,809 [INFO] Checking for new CS2 news...
+2026-05-25 14:18:44,727 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:18:46,846 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:18:48,963 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:18:51,079 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:18:53,229 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:18:55,416 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:18:57,532 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:18:59,647 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:01,780 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:03,898 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:06,021 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:08,175 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:10,315 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:12,491 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:14,623 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:16,797 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:18,924 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:21,036 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:23,138 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:25,251 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:27,354 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:29,465 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:31,583 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:33,725 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:35,853 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/sendMessage "HTTP/1.1 200 OK"
+2026-05-25 14:19:37,856 [INFO] Sent 25 new articles for approval.
+2026-05-25 14:19:37,932 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/deleteWebhook "HTTP/1.1 200 OK"
+2026-05-25 14:19:37,934 [INFO] Application started
+2026-05-25 14:19:48,188 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:19:58,260 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:20:08,333 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:20:18,408 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:20:28,479 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:20:38,552 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:20:48,624 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:20:58,697 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:21:08,523 [INFO] HTTP Request: POST https://api.telegram.org/bot8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-25 14:21:08,524 [INFO] Application is stopping. This might take a moment.
+2026-05-25 14:21:08,524 [INFO] Application.stop() complete
+2026-05-25 14:21:08,538 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<main.<locals>.startup.<locals>.periodic() done, defined at C:\Users\gkupreishvili\Desktop\scoper_bot\bot.py:353> wait_for=<Future pending cb=[Task.task_wakeup()]>>
