@@ -19,7 +19,7 @@ import schedule
 import time
 from datetime import datetime
 from pathlib import Path
-
+import os
 import requests
 from bs4 import BeautifulSoup
 from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -30,9 +30,10 @@ from telegram.ext import Application, CallbackQueryHandler, MessageHandler, filt
 # ─────────────────────────────────────────────
 #  CONFIG
 # ─────────────────────────────────────────────
-BOT_TOKEN   = "8963552470:AAFIOTb_-5JMGyTUdCTaByaXa7WBHZlOL_A"       # from @BotFather
-CHANNEL_ID  = "@cs2scoper"           # your channel
-ADMIN_ID    = 5528680090             # your Telegram ID (@godbl4ck)
+
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN")
+ADMIN_ID  = int(os.environ.get("ADMIN_ID", "5528680090"))
+CHANNEL_ID = os.environ.get("CHANNEL_ID", "@cs2scoper")
 
 CHECK_INTERVAL_MINUTES = 15
 POSTED_CACHE_FILE      = "posted_articles.json"
