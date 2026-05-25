@@ -1,155 +1,123 @@
 """
-CS2 News Approval Bot for Telegram
-- Scrapes news from multiple sources + @sl4mtv channel
-- Sends each article to YOU privately for approval
-- You edit the text and press Approve → posts to @cs2scoper
+CS2 News Approval Bot — No external telegram library, works on any Python version!
+Uses Telegram HTTP API directly.
 """
-
-import sys
-sys.stdout.reconfigure(encoding='utf-8')
-sys.stderr.reconfigure(encoding='utf-8')
 
 import asyncio
 import feedparser
 import hashlib
 import json
 import logging
+import os
 import re
-import schedule
 import time
 from datetime import datetime
 from pathlib import Path
-import os
+
 import requests
 from bs4 import BeautifulSoup
-from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.constants import ParseMode
-from telegram.error import TelegramError
-from telegram.ext import Application, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
 # ─────────────────────────────────────────────
 #  CONFIG
 # ─────────────────────────────────────────────
-
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN")
-ADMIN_ID  = int(os.environ.get("ADMIN_ID", "5528680090"))
+BOT_TOKEN  = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("CHANNEL_ID", "@cs2scoper")
+ADMIN_ID   = int(os.environ.get("ADMIN_ID", "5528680090"))
 
-CHECK_INTERVAL_MINUTES = 15
+CHECK_INTERVAL_SECONDS = 15 * 60  # 15 minutes
 POSTED_CACHE_FILE      = "posted_articles.json"
 PENDING_FILE           = "pending_articles.json"
+
+API = f"https://api.telegram.org/bot{BOT_TOKEN}"
 # ─────────────────────────────────────────────
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler("bot.log", encoding="utf-8"),
-    ]
+    handlers=[logging.StreamHandler()],
 )
 log = logging.getLogger(__name__)
 
 
-# ── NEWS SOURCES ──────────────────────────────
+# ── SOURCES ───────────────────────────────────
 SOURCES = [
-    {
-        "name": "BLAST",
-        "type": "rss",
-        "url": "https://blast.tv/feed",
-        "emoji": "💥",
-    },
-    {
-        "name": "ESL",
-        "type": "rss",
-        "url": "https://www.eslgaming.com/feed",
-        "emoji": "🏆",
-    },
-    {
-        "name": "Valve Steam",
-        "type": "rss",
-        "url": "https://store.steampowered.com/feeds/news/app/730/",
-        "emoji": "🔧",
-    },
-    {
-        "name": "sl4mtv",
-        "type": "telegram",
-        "url": "https://t.me/s/sl4mtv",
-        "emoji": "📡",
-    },
+    {"name": "BLAST",       "type": "rss",      "url": "https://blast.tv/feed",                                    "emoji": "💥"},
+    {"name": "ESL",         "type": "rss",      "url": "https://www.eslgaming.com/feed",                           "emoji": "🏆"},
+    {"name": "Valve Steam", "type": "rss",      "url": "https://store.steampowered.com/feeds/news/app/730/",       "emoji": "🔧"},
+    {"name": "sl4mtv",      "type": "telegram", "url": "https://t.me/s/sl4mtv",                                    "emoji": "📡"},
 ]
 
 
 # ── CACHE ─────────────────────────────────────
-def load_cache() -> set:
-    if Path(POSTED_CACHE_FILE).exists():
-        with open(POSTED_CACHE_FILE, encoding="utf-8") as f:
-            return set(json.load(f))
-    return set()
+def load_json(path, default):
+    if Path(path).exists():
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    return default
 
-def save_cache(cache: set):
-    with open(POSTED_CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(list(cache), f)
+def save_json(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
-def make_id(text: str) -> str:
+def make_id(text):
     return hashlib.md5(text.encode()).hexdigest()
 
-def load_pending() -> dict:
-    if Path(PENDING_FILE).exists():
-        with open(PENDING_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    return {}
 
-def save_pending(pending: dict):
-    with open(PENDING_FILE, "w", encoding="utf-8") as f:
-        json.dump(pending, f, ensure_ascii=False)
+# ── TELEGRAM API HELPERS ──────────────────────
+def tg(method, **kwargs):
+    try:
+        r = requests.post(f"{API}/{method}", json=kwargs, timeout=15)
+        return r.json()
+    except Exception as e:
+        log.error(f"Telegram API error: {e}")
+        return {}
+
+def send_message(chat_id, text, reply_markup=None, parse_mode="HTML"):
+    payload = {"chat_id": chat_id, "text": text, "parse_mode": parse_mode}
+    if reply_markup:
+        payload["reply_markup"] = reply_markup
+    return tg("sendMessage", **payload)
+
+def edit_message(chat_id, message_id, text):
+    return tg("editMessageText", chat_id=chat_id, message_id=message_id, text=text)
+
+def answer_callback(callback_query_id, text=""):
+    return tg("answerCallbackQuery", callback_query_id=callback_query_id, text=text)
+
+def get_updates(offset=None):
+    params = {"timeout": 30, "allowed_updates": ["message", "callback_query"]}
+    if offset:
+        params["offset"] = offset
+    return tg("getUpdates", **params)
 
 
 # ── SCRAPERS ──────────────────────────────────
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    )
-}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
-def scrape_telegram_channel(source: dict) -> list[dict]:
-    """Scrape public Telegram channel web preview."""
+def scrape_telegram_channel(source):
     articles = []
     try:
         resp = requests.get(source["url"], headers=HEADERS, timeout=10)
-        resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-
         messages = soup.select(".tgme_widget_message_text")
         links    = soup.select(".tgme_widget_message_wrap")
-
         for i, msg in enumerate(messages[:10]):
             text = msg.get_text(separator="\n", strip=True)
             if len(text) < 30:
                 continue
-
-            # Try to get message link
             url = source["url"]
             try:
-                wrap = links[i]
-                a = wrap.select_one("a.tgme_widget_message_date")
+                a = links[i].select_one("a.tgme_widget_message_date")
                 if a:
-                    url = a.get("href", source["url"])
+                    url = a.get("href", url)
             except:
                 pass
-
-            articles.append({
-                "title": text[:100],
-                "full_text": text,
-                "url": url,
-                "source": source,
-            })
+            articles.append({"title": text[:100], "full_text": text, "url": url, "source": source})
     except Exception as e:
-        log.warning(f"Telegram scrape failed for {source['name']}: {e}")
+        log.warning(f"Telegram scrape failed: {e}")
     return articles
 
-def fetch_rss(source: dict) -> list[dict]:
+def fetch_rss(source):
     articles = []
     try:
         feed = feedparser.parse(source["url"])
@@ -157,17 +125,12 @@ def fetch_rss(source: dict) -> list[dict]:
             title = entry.get("title", "").strip()
             url   = entry.get("link", "").strip()
             if title and url:
-                articles.append({
-                    "title": title,
-                    "full_text": title,
-                    "url": url,
-                    "source": source,
-                })
+                articles.append({"title": title, "full_text": title, "url": url, "source": source})
     except Exception as e:
-        log.warning(f"RSS fetch failed for {source['name']}: {e}")
+        log.warning(f"RSS failed for {source['name']}: {e}")
     return articles
 
-def fetch_all_news() -> list[dict]:
+def fetch_all_news():
     all_articles = []
     for source in SOURCES:
         if source["type"] == "telegram":
@@ -178,188 +141,160 @@ def fetch_all_news() -> list[dict]:
 
 
 # ── SEND FOR APPROVAL ─────────────────────────
-async def send_for_approval(bot: Bot, article: dict, article_id: str):
-    """Send article to admin with Edit + Approve + Skip buttons."""
-    src      = article["source"]
-    emoji    = src.get("emoji", "📰")
-    text     = article.get("full_text", article["title"])
-    url      = article["url"]
+def send_for_approval(article, article_id):
+    src     = article["source"]
+    text    = article.get("full_text", article["title"])
+    url     = article["url"]
 
     preview = (
-        f"📬 <b>New article from {src['name']}</b>\n\n"
-        f"{emoji} {text}\n\n"
-        f"🔗 {url}\n\n"
-        f"<i>Edit the text below and press Approve, or Skip to ignore.</i>"
+        f"📬 <b>New from {src['name']}</b>\n\n"
+        f"{src['emoji']} {text}\n\n"
+        f"🔗 {url}"
     )
 
-    keyboard = InlineKeyboardMarkup([
-        [
-            InlineKeyboardButton("✏️ Edit", callback_data=f"edit:{article_id}"),
-            InlineKeyboardButton("✅ Approve & Post", callback_data=f"approve:{article_id}"),
-            InlineKeyboardButton("🗑 Skip", callback_data=f"skip:{article_id}"),
-        ]
-    ])
+    keyboard = {
+        "inline_keyboard": [[
+            {"text": "✏️ Edit",           "callback_data": f"edit:{article_id}"},
+            {"text": "✅ Approve & Post", "callback_data": f"approve:{article_id}"},
+            {"text": "🗑 Skip",           "callback_data": f"skip:{article_id}"},
+        ]]
+    }
 
     # Save to pending
-    pending = load_pending()
+    pending = load_json(PENDING_FILE, {})
     pending[article_id] = {
         "text": text,
         "url": url,
         "source_name": src["name"],
-        "emoji": emoji,
+        "emoji": src["emoji"],
     }
-    save_pending(pending)
+    save_json(PENDING_FILE, pending)
 
-    await bot.send_message(
-        chat_id=ADMIN_ID,
-        text=preview,
-        parse_mode=ParseMode.HTML,
-        reply_markup=keyboard,
-        disable_web_page_preview=True,
-    )
+    send_message(ADMIN_ID, preview, reply_markup=keyboard)
 
 
-# ── CALLBACK HANDLER ──────────────────────────
-async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query    = update.callback_query
-    await query.answer()
+# ── HANDLE UPDATES ────────────────────────────
+editing_state = {}  # user_id -> article_id being edited
 
-    data       = query.data
+def handle_callback(callback_query):
+    cq_id      = callback_query["id"]
+    data       = callback_query.get("data", "")
+    msg        = callback_query.get("message", {})
+    message_id = msg.get("message_id")
+    user_id    = callback_query["from"]["id"]
+
+    if ":" not in data:
+        return
+
     action, article_id = data.split(":", 1)
-    pending    = load_pending()
-    cache      = load_cache()
+    pending = load_json(PENDING_FILE, {})
+    cache   = set(load_json(POSTED_CACHE_FILE, []))
 
     if article_id not in pending:
-        await query.edit_message_text("Article not found (already processed?)")
+        answer_callback(cq_id, "Already processed!")
         return
 
     article = pending[article_id]
+    answer_callback(cq_id)
 
-    if action == "edit":
-        # Ask admin to send new text
-        context.user_data["editing_id"] = article_id
-        await query.edit_message_text(
-            f"Send me your edited version of this article:\n\n"
-            f"{article['text']}\n\n"
-            f"<i>Just type and send your new text as a message.</i>",
-            parse_mode=ParseMode.HTML,
-        )
-
-    elif action == "skip":
+    if action == "skip":
         cache.add(article_id)
-        save_cache(cache)
+        save_json(POSTED_CACHE_FILE, list(cache))
         del pending[article_id]
-        save_pending(pending)
-        await query.edit_message_text(f"Skipped: {article['text'][:60]}...")
+        save_json(PENDING_FILE, pending)
+        edit_message(ADMIN_ID, message_id, f"Skipped.")
+
+    elif action == "edit":
+        editing_state[user_id] = article_id
+        send_message(
+            ADMIN_ID,
+            f"Send me your edited version:\n\n{article['text']}",
+        )
 
     elif action == "approve":
-        # Post to channel
-        now     = datetime.now().strftime("%d %b %Y · %H:%M")
-        message = (
-            f"{article['emoji']} {article['text']}\n\n"
-            f"#CS2 #CounterStrike #CS2News"
-        )
-        try:
-            bot = context.bot
-            await bot.send_message(
-                chat_id=CHANNEL_ID,
-                text=message,
-                parse_mode=ParseMode.HTML,
-                disable_web_page_preview=False,
-            )
+        text    = article["text"]
+        emoji   = article["emoji"]
+        message = f"{emoji} {text}\n\n#CS2 #CounterStrike #CS2News"
+        result  = send_message(CHANNEL_ID, message)
+        if result.get("ok"):
             cache.add(article_id)
-            save_cache(cache)
+            save_json(POSTED_CACHE_FILE, list(cache))
             del pending[article_id]
-            save_pending(pending)
-            await query.edit_message_text(f"Posted to {CHANNEL_ID}!")
-            log.info(f"Posted: {article['text'][:60]}...")
-        except TelegramError as e:
-            await query.edit_message_text(f"Error posting: {e}")
-            log.error(f"Post error: {e}")
+            save_json(PENDING_FILE, pending)
+            edit_message(ADMIN_ID, message_id, f"Posted to {CHANNEL_ID}!")
+            log.info(f"Posted: {text[:60]}...")
+        else:
+            edit_message(ADMIN_ID, message_id, f"Error: {result}")
 
+def handle_message(message):
+    user_id = message["from"]["id"]
+    text    = message.get("text", "")
 
-# ── HANDLE EDITED TEXT ────────────────────────
-async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Admin sends edited text — save it and show Approve button."""
-    if update.effective_user.id != ADMIN_ID:
+    if user_id != ADMIN_ID:
         return
 
-    editing_id = context.user_data.get("editing_id")
-    if not editing_id:
-        await update.message.reply_text("No article being edited. Use the Edit button first.")
-        return
+    if user_id in editing_state:
+        article_id = editing_state.pop(user_id)
+        pending    = load_json(PENDING_FILE, {})
 
-    # Update pending article with new text
-    pending = load_pending()
-    if editing_id not in pending:
-        await update.message.reply_text("Article not found.")
-        return
+        if article_id not in pending:
+            send_message(ADMIN_ID, "Article not found.")
+            return
 
-    pending[editing_id]["text"] = update.message.text
-    save_pending(pending)
-    context.user_data.pop("editing_id", None)
+        pending[article_id]["text"] = text
+        save_json(PENDING_FILE, pending)
 
-    # Show approve/skip buttons
-    keyboard = InlineKeyboardMarkup([
-        [
-            InlineKeyboardButton("✅ Approve & Post", callback_data=f"approve:{editing_id}"),
-            InlineKeyboardButton("🗑 Skip", callback_data=f"skip:{editing_id}"),
-        ]
-    ])
-
-    await update.message.reply_text(
-        f"Text updated! Ready to post:\n\n{update.message.text}\n\nPress Approve to publish.",
-        reply_markup=keyboard,
-    )
+        keyboard = {
+            "inline_keyboard": [[
+                {"text": "✅ Approve & Post", "callback_data": f"approve:{article_id}"},
+                {"text": "🗑 Skip",           "callback_data": f"skip:{article_id}"},
+            ]]
+        }
+        send_message(ADMIN_ID, f"Text updated! Ready to post:\n\n{text}", reply_markup=keyboard)
 
 
-# ── CHECK CYCLE ───────────────────────────────
-async def check_and_notify(app: Application):
-    log.info("Checking for new CS2 news...")
-    cache    = load_cache()
-    articles = fetch_all_news()
-    bot      = app.bot
-    found    = 0
-
-    for article in articles:
-        article_id = make_id(article["url"] + article["title"])
-        if article_id in cache:
-            continue
-
-        try:
-            await send_for_approval(bot, article, article_id)
-            cache.add(article_id)
-            save_cache(cache)
-            found += 1
-            await asyncio.sleep(2)
-        except Exception as e:
-            log.error(f"Error sending for approval: {e}")
-
-    log.info(f"Sent {found} new articles for approval.")
-
-
-# ── ENTRY POINT ───────────────────────────────
+# ── MAIN LOOP ─────────────────────────────────
 def main():
     if BOT_TOKEN == "YOUR_BOT_TOKEN":
-        print("Please set your BOT_TOKEN in bot.py!")
+        print("Set BOT_TOKEN environment variable first!")
         return
 
-    app = Application.builder().token(BOT_TOKEN).build()
-    app.add_handler(CallbackQueryHandler(button_handler))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, text_handler))
+    log.info("CS2 Scoper Bot started!")
+    offset         = None
+    last_check     = 0
 
-    async def startup(app):
-        await check_and_notify(app)
-        # Schedule periodic checks
-        async def periodic():
-            while True:
-                await asyncio.sleep(CHECK_INTERVAL_MINUTES * 60)
-                await check_and_notify(app)
-        asyncio.create_task(periodic())
+    while True:
+        # Check for new news
+        now = time.time()
+        if now - last_check >= CHECK_INTERVAL_SECONDS:
+            log.info("Checking for new articles...")
+            cache    = set(load_json(POSTED_CACHE_FILE, []))
+            articles = fetch_all_news()
+            found    = 0
+            for article in articles:
+                article_id = make_id(article["url"] + article["title"])
+                if article_id not in cache:
+                    send_for_approval(article, article_id)
+                    cache.add(article_id)
+                    save_json(POSTED_CACHE_FILE, list(cache))
+                    found += 1
+                    time.sleep(1)
+            log.info(f"Sent {found} new articles for approval.")
+            last_check = now
 
-    app.post_init = startup
-    print("Bot started! Check your Telegram for pending articles.")
-    app.run_polling(drop_pending_updates=True)
+        # Poll for button presses / messages
+        try:
+            result = get_updates(offset)
+            for update in result.get("result", []):
+                offset = update["update_id"] + 1
+                if "callback_query" in update:
+                    handle_callback(update["callback_query"])
+                elif "message" in update:
+                    handle_message(update["message"])
+        except Exception as e:
+            log.error(f"Polling error: {e}")
+
+        time.sleep(2)
 
 if __name__ == "__main__":
     main()
